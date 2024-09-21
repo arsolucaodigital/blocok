@@ -12,6 +12,7 @@ import { obras } from '@/configs/obras';
 import { sejaFranqueado } from '@/configs/sejaFranqueado';
 import { FaleConosco } from '@/components/FaleConosco';
 import { PeloPais } from '@/components/PeloPais';
+import { peloPais } from '@/configs/peloPais';
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
       <SejaFranqueado {...sejaFranqueado} />
 
       {/* CONFIRA NOSSAS franquias ​PELO PAÍS! */}
-      <PeloPais />
+      <PeloPais {...peloPais} />
 
       {/* Fale Conosco */}
       <FaleConosco />

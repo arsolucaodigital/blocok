@@ -1,10 +1,12 @@
 'use client';
-import { Resolver, SubmitHandler, useForm } from 'react-hook-form';
+import { Resolver, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import * as yup from 'yup';
 import { celularMask, cepMask } from 'masks-br';
 import { useState } from 'react';
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Importa o CSS do toast
 
 export type FormContact = {
   nome: string;
@@ -54,13 +56,19 @@ export function FaleConosco() {
       });
 
       if (response.ok) {
-        alert('Formulário enviado com sucesso!');
+        toast.success('Formulário enviado com sucesso!', {
+          position: 'bottom-right',
+        });
       } else {
-        alert('Houve um erro ao enviar o formulário.');
+        toast.error('Houve um erro ao enviar o formulário.', {
+          position: 'bottom-right',
+        });
       }
     } catch (error) {
       console.error('Erro ao enviar o formulário:', error);
-      alert('Erro ao enviar o formulário.');
+      toast.error('Erro ao enviar o formulário.', {
+        position: 'bottom-right',
+      });
     }
   };
 
@@ -95,162 +103,191 @@ export function FaleConosco() {
   };
 
   return (
-    <section className="mt-8 lg:mt-12 w-full">
-      <div className="container mx-auto px-4 lg:px-12 py-12 flex-col flex lg:flex-row gap-16 items-center">
-        <div className="w-full flex lg:w-1/2 gap-6">
-          <div className="w-full">
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-              <div>
-                <label htmlFor="nome" className="text-sm text-black font-bold">
-                  Nome*
-                </label>
-                <input
-                  {...register('nome')}
-                  className="border border-slate-500 text-sm rounded p-2 w-full"
-                />
-                {errors.nome && (
-                  <p className="text-red-600 text-xs font-bold">{errors.nome.message}</p>
-                )}
-              </div>
-              <div className="flex gap-4 w-full">
-                <div className="w-full">
+    <>
+      <ToastContainer />
+      <section className="mt-8 lg:mt-12 w-full">
+        <div className="container mx-auto px-4 lg:px-12 py-12 flex-col flex lg:flex-row gap-16 items-center">
+          <div className="w-full lg:w-1/2 flex flex-col gap-4">
+            <h2 className="text-5xl lg:text-8xl lfont-bold mb-4 uppercase font-bebas tracking-wide">
+              Seja Um Franqueado
+              <span className="text-blue-200 w-full block">
+                blocok original
+              </span>
+            </h2>
+            <p className="text-md lg:text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
+              Entre para a nossa lista de espera e se candidate a uma vaga de
+              franqueado
+            </p>
+          </div>
+          <div className="w-full flex lg:w-1/2 gap-6">
+            <div className="w-full">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                <div>
                   <label
-                    htmlFor="celular"
+                    htmlFor="nome"
                     className="text-sm text-black font-bold"
                   >
-                    Celular*
+                    Nome*
                   </label>
                   <input
-                    {...register('celular')}
-                    className="border border-slate-500 text-sm rounded p-2 w-full"
-                    onChange={(e) =>
-                      setValue('celular', celularMask(e.target.value))
-                    }
-                  />
-                  {errors.celular && (
-                    <p className="text-red-600 text-xs font-bold">{errors.celular.message}</p>
-                  )}
-                </div>
-                <div className="w-full">
-                  <label
-                    htmlFor="email"
-                    className="text-sm text-black font-bold"
-                  >
-                    Email*
-                  </label>
-                  <input
-                    {...register('email')}
+                    {...register('nome')}
                     className="border border-slate-500 text-sm rounded p-2 w-full"
                   />
-                  {errors.email && (
-                    <p className="text-red-600 text-xs font-bold">{errors.email.message}</p>
+                  {errors.nome && (
+                    <p className="text-red-600 text-xs font-bold">
+                      {errors.nome.message}
+                    </p>
                   )}
                 </div>
-              </div>
-              <div className="flex gap-4 w-full">
-                <div className="w-full">
-                  <label htmlFor="cep" className="text-sm text-black font-bold">
-                    CEP*
+                <div className="flex flex-col lg:flex-row gap-4 w-full">
+                  <div className="w-full">
+                    <label
+                      htmlFor="celular"
+                      className="text-sm text-black font-bold"
+                    >
+                      Celular*
+                    </label>
+                    <input
+                      {...register('celular')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                      onChange={(e) =>
+                        setValue('celular', celularMask(e.target.value))
+                      }
+                    />
+                    {errors.celular && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.celular.message}
+                      </p>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label
+                      htmlFor="email"
+                      className="text-sm text-black font-bold"
+                    >
+                      Email*
+                    </label>
+                    <input
+                      {...register('email')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                    />
+                    {errors.email && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.email.message}
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <div className="flex flex-col lg:flex-row gap-4 w-full">
+                  <div className="w-full">
+                    <label
+                      htmlFor="cep"
+                      className="text-sm text-black font-bold"
+                    >
+                      CEP*
+                    </label>
+                    <input
+                      {...register('cep')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                      maxLength={9}
+                      onChange={(e) => {
+                        setValue('cep', cepMask(e.target.value));
+                        fetchAddressByCep(e.target.value);
+                      }}
+                    />
+                    {loadingCep && <p>Carregando endereço...</p>}
+                    {errors.cep && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.cep.message}
+                      </p>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label
+                      htmlFor="cidade"
+                      className="text-sm text-black font-bold"
+                    >
+                      Cidade*
+                    </label>
+                    <input
+                      {...register('cidade')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full bg-gray-200 cursor-not-allowed"
+                      readOnly
+                    />
+                    {errors.cidade && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.cidade.message}
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <div className="flex flex-col lg:flex-row gap-4 w-full">
+                  <div className="w-full">
+                    <label
+                      htmlFor="bairro"
+                      className="text-sm text-black font-bold"
+                    >
+                      Bairro*
+                    </label>
+                    <input
+                      {...register('bairro')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                    />
+                    {errors.bairro && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.bairro.message}
+                      </p>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label
+                      htmlFor="estado"
+                      className="text-sm text-black font-bold"
+                    >
+                      Estado*
+                    </label>
+                    <input
+                      {...register('estado')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full bg-gray-200 cursor-not-allowed"
+                      readOnly
+                    />
+                    {errors.estado && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.estado.message}
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="mensagem"
+                    className="text-sm text-black font-bold"
+                  >
+                    Mensagem*
                   </label>
-                  <input
-                    {...register('cep')}
+                  <textarea
+                    {...register('mensagem')}
                     className="border border-slate-500 text-sm rounded p-2 w-full"
-                    maxLength={9}
-                    onChange={(e) => {
-                      setValue('cep', cepMask(e.target.value));
-                      fetchAddressByCep(e.target.value);
-                    }}
                   />
-                  {loadingCep && <p>Carregando endereço...</p>}
-                  {errors.cep && (
-                    <p className="text-red-600 text-xs font-bold">{errors.cep.message}</p>
+                  {errors.mensagem && (
+                    <p className="text-red-600 text-xs font-bold">
+                      {errors.mensagem.message}
+                    </p>
                   )}
                 </div>
-                <div className="w-full">
-                  <label
-                    htmlFor="cidade"
-                    className="text-sm text-black font-bold"
+                <div className="w-full flex justify-start items-center">
+                  <button
+                    type="submit"
+                    className="bg-blue-200 text-white p-2 rounded w-full hover:bg-blue-400 flex justify-center items-center text-center cursor-pointer"
                   >
-                    Cidade*
-                  </label>
-                  <input
-                    {...register('cidade')}
-                    className="border border-slate-500 text-sm rounded p-2 w-full bg-gray-200 cursor-not-allowed"
-                    readOnly
-                  />
-                  {errors.cidade && (
-                    <p className="text-red-600 text-xs font-bold">{errors.cidade.message}</p>
-                  )}
+                    Enviar
+                  </button>
                 </div>
-              </div>
-              <div className="flex gap-4 w-full">
-                <div className="w-full">
-                  <label
-                    htmlFor="bairro"
-                    className="text-sm text-black font-bold"
-                  >
-                    Bairro*
-                  </label>
-                  <input
-                    {...register('bairro')}
-                    className="border border-slate-500 text-sm rounded p-2 w-full"
-                  />
-                  {errors.bairro && (
-                    <p className="text-red-600 text-xs font-bold">{errors.bairro.message}</p>
-                  )}
-                </div>
-                <div className="w-full">
-                  <label
-                    htmlFor="estado"
-                    className="text-sm text-black font-bold"
-                  >
-                    Estado*
-                  </label>
-                  <input
-                    {...register('estado')}
-                    className="border border-slate-500 text-sm rounded p-2 w-full bg-gray-200 cursor-not-allowed"
-                    readOnly
-                  />
-                  {errors.estado && (
-                    <p className="text-red-600 text-xs font-bold">{errors.estado.message}</p>
-                  )}
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="mensagem"
-                  className="text-sm text-black font-bold"
-                >
-                  Mensagem*
-                </label>
-                <textarea
-                  {...register('mensagem')}
-                  className="border border-slate-500 text-sm rounded p-2 w-full"
-                />
-                {errors.mensagem && (
-                  <p className="text-red-600 text-xs font-bold">{errors.mensagem.message}</p>
-                )}
-              </div>
-              <button
-                type="submit"
-                className="bg-blue-200 text-white p-2 rounded w-[300px] hover:bg-blue-400 flex justify-center items-center text-center cursor-pointer"
-              >
-                Enviar
-              </button>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
-            Seja Um Franqueado
-            <span className="text-blue-200 w-full block">blocok original</span>
-          </h2>
-          <p className="text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
-            Entre para a nossa lista de espera e se candidate a uma vaga de
-            franqueado
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

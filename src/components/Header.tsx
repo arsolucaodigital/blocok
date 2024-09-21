@@ -30,7 +30,7 @@ export function Header() {
   }, [goingDown]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white">
+    <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="bg-black h-8">
         <div className="container px-4 mx-auto flex items-center justify-end h-full">
           <Link
@@ -74,8 +74,8 @@ export function Header() {
       </div>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Logo />
-        <div className='flex lg:hidden'>
-        <DropdownMenuDemo />
+        <div className="flex lg:hidden">
+          <DropdownMenuDemo />
         </div>
         <ul className="hidden gap-4 text-black uppercase text-sm font-bold lg:flex">
           <li>

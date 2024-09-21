@@ -1,9 +1,10 @@
-import { ImageProps } from "next/image";
+import { ImageProps } from 'next/image';
 
 export type EstruturaProps = {
-  textPlacaConcreto: string
-  TextPlacaEPS: string
-  image: ImageProps
+  textPlacaConcreto: string;
+  TextPlacaEPS: string;
+  image: ImageProps;
+  imageMalha: ImageProps;
 };
 
 export const estrutura: EstruturaProps = {
@@ -13,10 +14,16 @@ export const estrutura: EstruturaProps = {
   TextPlacaEPS: `A placa de EPS do tipo F contém ​tecnologia antichama
                 conferindo ​maior segurança em caso de ​incêndio e varia de
                 espessura de ​acordo com o tipo de Blocok`,
+  imageMalha: {
+    src: '/malha.png',
+    alt: 'Placa de concreto',
+    width: 180,
+    height: 180,
+  },
   image: {
-    src: "/blocok-02.jpg",
-    alt: "Placa de concreto",
+    src: '/blocok-02.png',
+    alt: 'Placa de concreto',
     width: 580,
     height: 500,
   },
-}
+};
