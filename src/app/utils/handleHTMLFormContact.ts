@@ -1,5 +1,4 @@
-import { FormContact } from "@/components/FaleConosco";
-
+import { FormContact } from '@/components/FaleConosco';
 
 export function handleHTMLFormContact(body: FormContact) {
   return `
@@ -76,15 +75,15 @@ export function handleHTMLFormContact(body: FormContact) {
                         </b>.
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
-                        Nome: <b>${body.nome} ${body.sobrenome}</b>
+                        Nome: <b>${body.nome}</b>
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
                         Telefone: 
                         <a 
-                        href="https://wa.me/${body.telefone.replace(/\D/g, '')}"
+                        href="https://wa.me/${body.celular.replace(/\D/g, '')}"
                         target="_blank"
                         style="color:#3AA7E0; font-weight:bold">
-                          ${body.telefone}
+                          ${body.celular}
                         </a>
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
