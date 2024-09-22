@@ -7,6 +7,7 @@ import { celularMask, cepMask } from 'masks-br';
 import { useState } from 'react';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Importa o CSS do toast
+import { Spinner } from '@radix-ui/themes';
 
 export type FormContact = {
   nome: string;
@@ -44,8 +45,10 @@ export function FaleConosco() {
   });
 
   const [loadingCep, setLoadingCep] = useState(false);
+  const [loadButton, setLoadButton] = useState(false);
 
   const onSubmit = async (data: FormContact) => {
+    setLoadButton(true);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -69,6 +72,8 @@ export function FaleConosco() {
       toast.error('Erro ao enviar o formulário.', {
         position: 'bottom-right',
       });
+    } finally {
+      setLoadButton(false);
     }
   };
 
@@ -279,8 +284,16 @@ export function FaleConosco() {
                   <button
                     type="submit"
                     className="bg-blue-200 text-white p-2 rounded w-full hover:bg-blue-400 flex justify-center items-center text-center cursor-pointer"
+                    disabled={loadButton}
                   >
-                    Enviar
+                    {loadButton ? (
+                      <div className="flex justify-center items-center gap-2">
+                        <Spinner className="w-5 h-5" />
+                        <span>Enviando...</span>
+                      </div>
+                    ) : (
+                      'Enviar'
+                    )}
                   </button>
                 </div>
               </form>
