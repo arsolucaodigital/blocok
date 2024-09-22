@@ -46,13 +46,12 @@ export async function sendMail({
     // Enviar o email
     const info = await transporter.sendMail({
       from: email, // Remetente
-      to: sendTo || SITE_MAIL_RECIEVER, // Destinatário
+      to: sendTo ||  SITE_MAIL_RECIEVER, // Destinatário
       subject: subject, // Assunto
       text: text, // Texto
       html: html || '', // HTML opcional
     });
 
-    console.log('Mensagem enviada:', info.messageId);
     return { success: true, message: 'Email enviado com sucesso' };
   } catch (error) {
     console.error('Erro ao enviar email:', error);

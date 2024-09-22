@@ -4,12 +4,9 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   const body = await req.json();
-  const { nome, sobrenome, telefone, email, cep, cidade, mensagem } = body;
+  const { nome, email } = body;
 
   console.log(body);
-
-  console.log("Email user:", process.env.EMAIL_USER);
-  console.log("Email pass:", process.env.EMAIL_PASS);
 
   // Configurando o transporte do Nodemailer com Gmail
   const transporter = nodemailer.createTransport({
@@ -24,17 +21,23 @@ export async function POST(req: Request) {
   const mailOptions = {
     from: email, // O e-mail do remetente
     to: 'arsolucaodigital@gmail.com', // Para quem o e-mail será enviado
-    subject: `Novo contato de ${nome} ${sobrenome}`, // Assunto do e-mail
-    text: '',
+    subject: `Novo contato de ${nome}`, // Assunto do e-mail
+    text: 'Mensagem do site Blocok Oficial',
     html: handleHTMLFormContact(body),
   };
 
   try {
     // Enviar o e-mail
     await transporter.sendMail(mailOptions);
-    return NextResponse.json({ message: 'E-mail enviado com sucesso!' }, { status: 200 });
+    return NextResponse.json(
+      { message: 'E-mail enviado com sucesso!' },
+      { status: 200 },
+    );
   } catch (error) {
     console.error('Erro ao enviar e-mail:', error);
-    return NextResponse.json({ message: 'Erro ao enviar e-mail' }, { status: 500 });
+    return NextResponse.json(
+      { message: 'Erro ao enviar e-mail' },
+      { status: 500 },
+    );
   }
 }

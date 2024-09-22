@@ -55,9 +55,9 @@ export function handleHTMLFormContact(body: FormContact) {
                   style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
                   width="100%"
                 >
-                  <tr style="background-color: black; border-bottom: 2px solid #3AA7E0; height: auto; display: table; width: 100%">
+                  <tr style="background-color: white; border-bottom: 2px solid #3AA7E0; height: auto; display: table; width: 100%">
                     <td style="text-align: center; padding-top: 25px; padding-bottom: 25px;">
-                      <img src="https://www.Blocok.com.br/email/logo-Blocok.png" alt="Blocok" />
+                      <img src="https://blocok.vercel.app/logo-preta.png" alt="Blocok" width="120" height="auto" />
                     </td>
                   </tr>
                   <tr>
@@ -69,10 +69,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         Olá, Equipe Blocok
                       </p>
                       <p style="font-family: sans-serif; color:#000; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 20px;">
-                        Temos uma nova mensagem do nosso site:
-                        <b style="font-size: 16px; color:#000;">
-                          Do nosso site
-                        </b>.
+                        Temos uma nova mensagem do nosso site!
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
                         Nome: <b>${body.nome}</b>
@@ -97,7 +94,9 @@ export function handleHTMLFormContact(body: FormContact) {
                         </a>
                       </p>
                     <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
-                      Cidade: <b>${body.cidade}</b>
+                      Endereço: <b>${body.bairro}</b><br />
+                      Cidade: <b>${body.cidade} - ${body.estado}</b><br />
+                      CEP: <b>${body.cep}</b><br />
                     </p>
                     <hr style="margin-bottom: 15px" />
                 
@@ -134,9 +133,9 @@ export function handleHTMLFormContact(body: FormContact) {
                       </p>
                     </td>
                   </tr>
-                  <tr style="background-color: black; border-top: 2px solid #3AA7E0; height: auto; margin-top: 15px; width: 100%; display: table;">
+                  <tr style="background-color: white; border-top: 2px solid #3AA7E0; height: auto; margin-top: 15px; width: 100%; display: table;">
                     <td style="padding: 25px; padding-bottom: 25px;">
-                      <p style="color: white; font-size: 16px; font-weight: bold;">
+                      <p style="color: black; font-size: 16px; font-weight: bold;">
                         Entre em contato:
                       </p>
                       <a
@@ -179,7 +178,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         target="_blank"
                       >
                       <img
-                        src="https://www.Blocok.com.br/email/logo-Blocok.png"
+                        src="https://blocok.vercel.app/logo-preta.png"
                         alt="Blocok"
                         style="width: 80px;"
                       />

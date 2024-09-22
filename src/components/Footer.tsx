@@ -91,7 +91,7 @@ export function Footer() {
       </div>
       <div className="w-full flex justify-center bg-white py-4">
         <div className="container mx-auto px-4 lg:px-12 flex flex-col lg:flex-row gap-4 items-center">
-          <p className="text-xs text-center lg:text-sm text-black font-bold">
+          <p className="text-xs text-center lg:text-sm text-black font-bold w-full">
             Todos os direitos reservados ©Blocok Paredes Prontas ORIGINAL -
             2024
           </p>

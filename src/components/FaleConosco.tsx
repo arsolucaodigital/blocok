@@ -39,6 +39,7 @@ export function FaleConosco() {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm<FormContact>({
     resolver: yupResolver(contatoSchema) as Resolver<FormContact>,
@@ -62,6 +63,7 @@ export function FaleConosco() {
         toast.success('Formulário enviado com sucesso!', {
           position: 'bottom-right',
         });
+        reset();
       } else {
         toast.error('Houve um erro ao enviar o formulário.', {
           position: 'bottom-right',
@@ -288,7 +290,7 @@ export function FaleConosco() {
                   >
                     {loadButton ? (
                       <div className="flex justify-center items-center gap-2">
-                        <Spinner className="w-5 h-5" />
+                        <Spinner size="2" />
                         <span>Enviando...</span>
                       </div>
                     ) : (
