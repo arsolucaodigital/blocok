@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${bebas.variable} ${sans.variable}`}>
+    <html
+      lang="pt-br"
+      className={`${bebas.variable} ${sans.variable} scroll-smooth scroll-py-[80px]`}
+    >
       <body className="font-sans">
         <Header />
         {children}

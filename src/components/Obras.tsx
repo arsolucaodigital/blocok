@@ -3,9 +3,9 @@ import { SliderObras } from './Slider';
 
 export function Obras({ images }: ObrasProps) {
   return (
-    <section className="mt-8 lg:mt-12 w-full">
+    <section className="mt-8 lg:mt-12 w-full max-w-[100vw]">
       <div className="container mx-auto px-4 py-6 lg:py-12 flex gap-4 items-center flex-col">
-        <h2 className="text-5xl lg:text-8xl lfont-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
+        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
           OBRAS EXECUTADAS COM{' '}
           <span className="text-blue-200">Blocok original</span>
         </h2>

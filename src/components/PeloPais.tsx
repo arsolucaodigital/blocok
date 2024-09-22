@@ -10,18 +10,18 @@ export function PeloPais({ image }: peloPais) {
           <Image {...image} />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-8xl lfont-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
             Confira nossas{' '}
             <span className="text-blue-200">franquias Blocok</span> pelo país!
           </h2>
           <p className="text-md lg:text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
             Já estamos presente em mais de{' '}
-            <span className="text-blue-200">10 ​Estados</span> em todo o país,{' '}
-            <span className="text-blue-200">
-              você pode se ​tornar um franqueado
-            </span>{' '}
-            do método ​construtivo que está revolucionando a ​área da construção
-            civil!
+            <span className="text-blue-200 uppercase"> 30 Franqueados</span> em{' '}
+            <span className="text-blue-200 uppercase"> 14 estados</span> por todo{' '}
+            o país! você também pode se tornar um franqueado
+            <span className="text-blue-200 uppercase"> blocok original</span> o
+            sistema construtivo revolucionário da construção civil. A franquia
+            que mais cresce no país!
           </p>
           {/* <div className="flex justify-end w-full lg:w-[80%]">
             <Link

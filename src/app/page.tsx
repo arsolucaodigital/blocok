@@ -13,6 +13,7 @@ import { sejaFranqueado } from '@/configs/sejaFranqueado';
 import { FaleConosco } from '@/components/FaleConosco';
 import { PeloPais } from '@/components/PeloPais';
 import { peloPais } from '@/configs/peloPais';
+import FadeInSection from '@/components/FrameMotion';
 
 export default function Home() {
   return (
@@ -21,25 +22,39 @@ export default function Home() {
       <BannerPrincipal {...bannerPrincipal} />
 
       {/* O que é a blocok */}
-      <Sobre {...sobre} />
+      <FadeInSection linkId="o-que-e-a-blocok">
+        <Sobre {...sobre} />
+      </FadeInSection>
 
       {/* estrutura do blocok original */}
-      <Estrutura {...estrutura} />
+      <FadeInSection linkId="produtos">
+        <Estrutura {...estrutura} />
+      </FadeInSection>
 
       {/* testes laboratoriais */}
-      <TestesLaboratoriais {...testesLaboratoriais} />
+      <FadeInSection>
+        <TestesLaboratoriais {...testesLaboratoriais} />
+      </FadeInSection>
 
       {/* OBRAS EXECUTADAS COM BLOCOK ​ORIGINAL */}
-      <Obras {...obras} />
+      <FadeInSection linkId="obras">
+        <Obras {...obras} />
+      </FadeInSection>
 
       {/* por que se tornar um ​franqueado? */}
-      <SejaFranqueado {...sejaFranqueado} />
+      <FadeInSection>
+        <SejaFranqueado {...sejaFranqueado} />
+      </FadeInSection>
 
       {/* CONFIRA NOSSAS franquias ​PELO PAÍS! */}
-      <PeloPais {...peloPais} />
+      <FadeInSection>
+        <PeloPais {...peloPais} />
+      </FadeInSection>
 
       {/* Fale Conosco */}
-      <FaleConosco />
+      <FadeInSection linkId="seja-um-franqueado">
+        <FaleConosco />
+      </FadeInSection>
     </main>
   );
 }

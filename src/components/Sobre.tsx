@@ -12,7 +12,7 @@ export function Sobre({ description, image }: SobreProps) {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-8xl lfont-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
             o que é o{' '}
             <span className="text-blue-200 w-full block">
               blocok original

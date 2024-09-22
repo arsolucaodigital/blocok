@@ -6,7 +6,7 @@ export function TestesLaboratoriais({ itemTestes }: TestesLaboratoriaisProps) {
   return (
     <section className="mt-8 lg:mt-12 w-full">
       <div className="container mx-auto px-4 py-6 lg:py-12 flex gap-4 items-center flex-col">
-        <h2 className="text-5xl lg:text-8xl lfont-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
+        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
           Testes laboratoriais
         </h2>
         <div className="w-full flex gap-4 items-center mb-10">

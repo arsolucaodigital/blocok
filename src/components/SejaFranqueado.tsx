@@ -19,7 +19,7 @@ export function SejaFranqueado({ description, images }: SejaFranqueadoProps) {
           </div>
         </div>
         <div className="w-full lg:w-3/4 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-8xl lfont-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
             Por que se tornar um
             <span className="text-blue-200 w-full block">
               ​franqueado
