@@ -5,7 +5,7 @@ import Link from 'next/link';
 export function Sobre({ description, image }: SobreProps) {
   return (
     <section className="mt-8 lg:mt-12 w-full">
-      <div className="container mx-auto px-4 lg:px-12 py-12 flex-col flex lg:flex-row gap-4 items-center">
+      <div className="container mx-auto px-4 lg:px-12 py-12 flex-col-reverse flex lg:flex-row gap-4 items-center">
         <div className="w-full lg:w-1/2">
           <div className="w-full lg:w-[90%] h-auto lg:h-[500px] mb-5 lg:mb-0">
             <Image {...image} />
