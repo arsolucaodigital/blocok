@@ -19,11 +19,6 @@ export function DropdownMenuDemo() {
             <Link href="#o-que-e-a-blocok">Sobre</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          <DropdownMenu.Item className="DropdownMenuItem">
-            <Link href="#produtos" className="hover:text-blue-300">
-              Produtos
-            </Link>
-          </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item className="DropdownMenuItem">
             <Link href="#obras" className="hover:text-blue-300">
@@ -31,11 +26,11 @@ export function DropdownMenuDemo() {
             </Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          {/* <DropdownMenu.Item className="DropdownMenuItem">
+          <DropdownMenu.Item className="DropdownMenuItem">
             <Link href="#depoimentos" className="hover:text-blue-300">
               Depoimentos
             </Link>
-          </DropdownMenu.Item> */}
+          </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item className="DropdownMenuItem">
             <Link href="#seja-um-franqueado" className="hover:text-blue-300">

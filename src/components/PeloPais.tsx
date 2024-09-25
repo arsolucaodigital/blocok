@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export function PeloPais({ image }: peloPais) {
   return (
-    <section className="bg-gray-100 mt-8 lg:mt-12 w-full flex py-32">
-      <div className="container mx-auto px-4 lg:px-12 flex flex-col lg:flex-row gap-4 items-center">
+    <section className="bg-gray-100 mt-8 lg:mt-12 w-full flex py-16 lg:py-32">
+      <div className="container mx-auto px-4 lg:px-12 flex flex-col-reverse lg:flex-row gap-4 items-center">
         <div className="w-full lg:w-1/2">
           <Image {...image} />
         </div>

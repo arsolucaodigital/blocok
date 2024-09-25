@@ -35,14 +35,11 @@ export function Header() {
         <div className="container px-4 mx-auto flex items-center justify-end h-full">
           <Link
             href="mailto:franquiablocok@gmail.com"
-            className="text-white text-sm hover:text-blue-100 hidden lg:flex"
+            className="text-white text-sm hover:text-blue-100 flex"
           >
             franquiablocok@gmail.com
           </Link>
           <div className="text-white text-sm mx-3 hidden lg:flex"> - </div>
-          <Link href="" className="text-white text-sm hover:text-blue-100">
-            (22)99999-9999
-          </Link>
           <div className="text-white text-sm mx-3"> | </div>
           <ul className="flex gap-2 items-center">
             <li>
@@ -84,20 +81,15 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#produtos" className="hover:text-blue-300">
-              Produtos
-            </Link>
-          </li>
-          <li>
             <Link href="#obras" className="hover:text-blue-300">
               Obras
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="#depoimentos" className="hover:text-blue-300">
               Depoimentos
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link href="#seja-um-franqueado" className="hover:text-blue-300">
               Seja um franqueado!
