@@ -7,6 +7,7 @@ import {
   MapPin,
   Mail,
 } from 'tabler-icons-react';
+import { LogoBranca } from './LogoBranca';
 
 export function Footer() {
   return (
@@ -14,7 +15,7 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-12 flex flex-col lg:flex-row gap-4 items-center py-12 ">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full flex flex-col gap-4">
-            <Logo />
+            <LogoBranca />
             <p className="text-md lg:text-lg text-white">
               <span className="text-blue-300 uppercase">
                 BLOCOK Paredes Prontas ORIGINAL
@@ -40,7 +41,7 @@ export function Footer() {
                     </p>
                   </Link>
                 </li>
-                <li className="flex gap-6">
+                {/* <li className="flex gap-6">
                   <Link
                     href=""
                     className="text-white text-md lg:text-lg font-extralight hover:text-blue-300 flex gap-2"
@@ -51,7 +52,7 @@ export function Footer() {
                     />
                     <p className="text-md lg:text-lg">(21) 99999-9999</p>
                   </Link>
-                </li>
+                </li> */}
                 <li className="flex gap-6">
                   <Link
                     href=""

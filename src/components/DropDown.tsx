@@ -1,12 +1,20 @@
+'use client';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 
 import { Menu2 } from 'tabler-icons-react';
 import './styles.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export function DropdownMenuDemo() {
+  const [open, setOpen] = useState(false);
+
+  const handleItemClick = () => {
+    setOpen(false); // Fecha o dropdown ao clicar em um item
+  };
+
   return (
-    <DropdownMenu.Root>
+    <DropdownMenu.Root open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger asChild>
         <button aria-label="Customise options" className="text-xl font-black">
           <Menu2 className="font-black" size={40} />
@@ -14,20 +22,32 @@ export function DropdownMenuDemo() {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
-          <DropdownMenu.Item className="DropdownMenuItem">
+        <DropdownMenu.Content className="DropdownMenuContent">
+          <DropdownMenu.Item
+            className="DropdownMenuItem"
+            onClick={handleItemClick}
+          >
             <Link href="#o-que-e-a-blocok">Sobre</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          <DropdownMenu.Item className="DropdownMenuItem">
+          <DropdownMenu.Item
+            className="DropdownMenuItem"
+            onClick={handleItemClick}
+          >
             <Link href="#obras">Obras</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          <DropdownMenu.Item className="DropdownMenuItem">
+          <DropdownMenu.Item
+            className="DropdownMenuItem"
+            onClick={handleItemClick}
+          >
             <Link href="#depoimentos">Depoimentos</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          <DropdownMenu.Item className="DropdownMenuItem">
+          <DropdownMenu.Item
+            className="DropdownMenuItem"
+            onClick={handleItemClick}
+          >
             <Link href="#seja-um-franqueado">Seja um franqueado!</Link>
           </DropdownMenu.Item>
         </DropdownMenu.Content>

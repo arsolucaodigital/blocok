@@ -55,7 +55,7 @@ export function handleHTMLFormContact(body: FormContact) {
                   style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
                   width="100%"
                 >
-                  <tr style="background-color: white; border-bottom: 2px solid #3AA7E0; height: auto; display: table; width: 100%">
+                  <tr style="background-color: white; border-bottom: 2px solid #5171FD; height: auto; display: table; width: 100%">
                     <td style="text-align: center; padding-top: 25px; padding-bottom: 25px;">
                       <img src="https://blocok.vercel.app/logo-preta.png" alt="Blocok" width="120" height="auto" />
                     </td>
@@ -65,7 +65,7 @@ export function handleHTMLFormContact(body: FormContact) {
                       style="font-family: sans-serif; font-size: 14px; vertical-align: top;"
                       valign="top"
                     >
-                      <p style="font-family: sans-serif; font-size: 20px; font-weight: bold; margin: 0; margin-top:25px; margin-bottom: 20px;color:#3AA7E0; ">
+                      <p style="font-family: sans-serif; font-size: 20px; font-weight: bold; margin: 0; margin-top:25px; margin-bottom: 20px;color:#5171FD; ">
                         Olá, Equipe Blocok
                       </p>
                       <p style="font-family: sans-serif; color:#000; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 20px;">
@@ -79,7 +79,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         <a 
                         href="https://wa.me/${body.celular.replace(/\D/g, '')}"
                         target="_blank"
-                        style="color:#3AA7E0; font-weight:bold">
+                        style="color:#5171FD; font-weight:bold">
                           ${body.celular}
                         </a>
                       </p>
@@ -88,7 +88,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         <a
                           href="mailto:${body.email}"
                           target="_blank"
-                          style="color:#3AA7E0; font-weight:bold"
+                          style="color:#5171FD; font-weight:bold"
                         >
                           ${body.email}
                         </a>
@@ -106,7 +106,7 @@ export function handleHTMLFormContact(body: FormContact) {
                       </p>
                       <a
                         href="www.Blocok.com.br"
-                        style="color:#3AA7E0; display:table; margin-top:50px; font-size:14px; width:100%; text-align:left; font-weight:bold; text-decoration: none;"
+                        style="color:#5171FD; display:table; margin-top:50px; font-size:14px; width:100%; text-align:left; font-weight:bold; text-decoration: none;"
                         target="_blank"
                       >
                         Blocok
@@ -133,7 +133,7 @@ export function handleHTMLFormContact(body: FormContact) {
                       </p>
                     </td>
                   </tr>
-                  <tr style="background-color: white; border-top: 2px solid #3AA7E0; height: auto; margin-top: 15px; width: 100%; display: table;">
+                  <tr style="background-color: white; border-top: 2px solid #5171FD; height: auto; margin-top: 15px; width: 100%; display: table;">
                     <td style="padding: 25px; padding-bottom: 25px;">
                       <p style="color: black; font-size: 16px; font-weight: bold;">
                         Entre em contato:
@@ -144,8 +144,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="35px"
-                          src="https://blocok.vercel.app/icone/icone_wp.png"
+                          width="25px"
+                          src="https://blocok.vercel.app/icons/icone_wp.png"
                           alt="WhatsApp"
                         />
                       </a>
@@ -155,8 +155,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="35px"
-                          src="https://blocok.vercel.app/icone/icone_int.png"
+                          width="25px"
+                          src="https://blocok.vercel.app/icons/icone_int.png"
                           alt="Instagram"
                         />
                       </a>
@@ -166,8 +166,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="35px"
-                          src="https://blocok.vercel.app/icone/icone_fb.png"
+                          width="25px"
+                          src="https://blocok.vercel.app/icons/icone_fb.png"
                           alt="Facebook"
                         />
                       </a>
