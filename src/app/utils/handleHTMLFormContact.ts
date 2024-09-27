@@ -144,8 +144,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="25px"
-                          src="https://www.Blocok.com.br/email/whatsapp.png"
+                          width="35px"
+                          src="https://blocok.vercel.app/icone/icone_wp.png"
                           alt="WhatsApp"
                         />
                       </a>
@@ -155,8 +155,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="25px"
-                          src="https://www.Blocok.com.br/email/instagram.png"
+                          width="35px"
+                          src="https://blocok.vercel.app/icone/icone_int.png"
                           alt="Instagram"
                         />
                       </a>
@@ -166,8 +166,8 @@ export function handleHTMLFormContact(body: FormContact) {
                         style="text-decoration: none; margin-right: 6px;"
                       >
                         <img
-                          width="25px"
-                          src="https://www.Blocok.com.br/email/facebook.png"
+                          width="35px"
+                          src="https://blocok.vercel.app/icone/icone_fb.png"
                           alt="Facebook"
                         />
                       </a>

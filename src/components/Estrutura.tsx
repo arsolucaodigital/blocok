@@ -32,13 +32,15 @@ export function Estrutura({
                 {TextPlacaEPS}
               </p>
             </div>
-            <div className="mx-auto w-full lg:w-[80%] my-8 text-center">
-              <p className="text-5xl font-bold font-bebas uppercase">
-                Importante!
-              </p>
-              <p className="text-md lg:text-xl font-bold text-center px-8 uppercase">
-                O blocok não tem malha de aço em sua estrutura
-              </p>
+            <div className="border-solid border-4 border-black  mx-auto w-full lg:w-[80%] my-8 ">
+              <div className="flex flex-col gap-4 bg-blue-100 items-center py-10  justify-center border-solid border-4 border-white">
+                <p className="text-5xl font-bold font-bebas uppercase">
+                  Importante!
+                </p>
+                <p className="text-md lg:text-xl font-bold text-center px-8 uppercase">
+                  O blocok não tem malha de aço em sua estrutura
+                </p>
+              </div>
             </div>
             <div className="w-[60%] auto mx-auto mb-6 flex justify-center">
               <Image {...imageMalha} />
