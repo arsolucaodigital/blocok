@@ -15,7 +15,7 @@ export function PeloPais({ image }: peloPais) {
             <span className="text-blue-300">franquias Blocok</span> pelo país!
           </h2>
           <p className="text-md lg:text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
-            Já estamos presente em mais de{' '}
+            Já somos mais de{' '}
             <span className="text-blue-300 uppercase"> 30 Franqueados</span> em{' '}
             <span className="text-blue-300 uppercase"> 14 estados</span> por
             todo o país! você também pode se tornar um franqueado
