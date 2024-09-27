@@ -12,7 +12,7 @@ export function Estrutura({
     <section className="bg-gray-100 mt-8 lg:mt-12 w-full py-20 md:py-32">
       <div className="flex container px-4 mx-auto flex-col">
         <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
-          Estrutura do <span className="text-blue-200">Blocok original</span>
+          Estrutura do <span className="text-blue-300">Blocok original</span>
         </h2>
         <div className="w-full flex flex-col lg:flex-row gap-4 items-center">
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
@@ -33,7 +33,7 @@ export function Estrutura({
               </p>
             </div>
             <div className="border-solid border-4 border-black  mx-auto w-full lg:w-[80%] my-8 ">
-              <div className="flex flex-col gap-4 bg-blue-100 items-center py-10  justify-center border-solid border-4 border-white">
+              <div className="flex flex-col gap-4 bg-blue-300 items-center py-10  justify-center border-solid border-4 border-white">
                 <p className="text-5xl font-bold font-bebas uppercase">
                   Importante!
                 </p>
@@ -48,7 +48,7 @@ export function Estrutura({
             {/* <div className="flex justify-start">
               <Link
                 href="/sobre"
-                className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-200"
+                className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-300"
               >
                 Saiba mais
               </Link>

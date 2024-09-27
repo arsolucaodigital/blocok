@@ -21,7 +21,7 @@ export function SejaFranqueado({ description, images }: SejaFranqueadoProps) {
         <div className="w-full lg:w-3/4 flex flex-col gap-4">
           <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
             Por que se tornar um
-            <span className="text-blue-200 w-full block">
+            <span className="text-blue-300 w-full block">
               ​franqueado
               <span className="text-black">?</span>
             </span>
@@ -32,7 +32,7 @@ export function SejaFranqueado({ description, images }: SejaFranqueadoProps) {
           {/* <div className="flex justify-end w-[80%]">
             <Link
               href="/sobre"
-              className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-200"
+              className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-300"
             >
               Saiba mais
             </Link>

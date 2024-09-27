@@ -22,37 +22,37 @@ export default function Home() {
       <BannerPrincipal {...bannerPrincipal} />
 
       {/* O que é a blocok */}
-      <div id="o-que-e-a-blocok">
+      <div id="o-que-e-a-blocok" className='w-full'>
         <Sobre {...sobre} />
       </div>
 
       {/* estrutura do blocok original */}
-      <div id="produtos">
+      <div id="produtos" className='w-full'>
         <Estrutura {...estrutura} />
       </div>
 
       {/* testes laboratoriais */}
-      <div>
+      <div className='w-full'>
         <TestesLaboratoriais {...testesLaboratoriais} />
       </div>
 
       {/* OBRAS EXECUTADAS COM BLOCOK ​ORIGINAL */}
-      <div id="obras">
+      <div id="obras" className='w-full'>
         <Obras {...obras} />
       </div>
 
       {/* por que se tornar um ​franqueado? */}
-      <div>
+      <div className='w-full'>
         <SejaFranqueado {...sejaFranqueado} />
       </div>
 
       {/* CONFIRA NOSSAS franquias ​PELO PAÍS! */}
-      <div>
+      <div className='w-full'>
         <PeloPais {...peloPais} />
       </div>
 
       {/* Fale Conosco */}
-      <div id="seja-um-franqueado">
+      <div id="seja-um-franqueado" className='w-full'>
         <FaleConosco />
       </div>
     </main>

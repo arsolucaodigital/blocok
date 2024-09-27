@@ -16,7 +16,7 @@ export function Footer() {
           <div className="w-full flex flex-col gap-4">
             <Logo />
             <p className="text-md lg:text-lg text-white">
-              <span className="text-blue-200 uppercase">
+              <span className="text-blue-300 uppercase">
                 BLOCOK Paredes Prontas ORIGINAL
               </span>{' '}
               é mais do ​que uma empresa de construção. Nós somos ​uma revolução
@@ -31,7 +31,7 @@ export function Footer() {
                 <li className="flex gap-6">
                   <Link
                     href=""
-                    className="text-white font-extralight hover:text-blue-100 flex gap-2"
+                    className="text-white font-extralight hover:text-blue-300 flex gap-2"
                   >
                     <MapPin size={26} className="w-[26px] min-w-[26px]" />
                     <p className="text-md lg:text-lg">
@@ -43,7 +43,7 @@ export function Footer() {
                 <li className="flex gap-6">
                   <Link
                     href=""
-                    className="text-white text-md lg:text-lg font-extralight hover:text-blue-100 flex gap-2"
+                    className="text-white text-md lg:text-lg font-extralight hover:text-blue-300 flex gap-2"
                   >
                     <BrandWhatsapp
                       size={26}
@@ -55,7 +55,7 @@ export function Footer() {
                 <li className="flex gap-6">
                   <Link
                     href=""
-                    className="text-white font-extralight hover:text-blue-100 flex gap-2"
+                    className="text-white font-extralight hover:text-blue-300 flex gap-2"
                   >
                     <Mail size={26} className="w-[26px] min-w-[26px]" />
                     <p>blocok@gmail.com</p>
@@ -71,7 +71,7 @@ export function Footer() {
                 <li>
                   <Link
                     href=""
-                    className="text-white font-extralight hover:text-blue-100"
+                    className="text-white font-extralight hover:text-blue-300"
                   >
                     <BrandInstagram size={32} />
                   </Link>
@@ -79,7 +79,7 @@ export function Footer() {
                 <li>
                   <Link
                     href=""
-                    className="text-white font-extralight hover:text-blue-100"
+                    className="text-white font-extralight hover:text-blue-300"
                   >
                     <BrandFacebook size={32} />
                   </Link>

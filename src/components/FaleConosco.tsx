@@ -117,7 +117,7 @@ export function FaleConosco() {
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
             <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
               Seja Um Franqueado
-              <span className="text-blue-200 w-full block">
+              <span className="text-blue-300 w-full block">
                 blocok original
               </span>
             </h2>
@@ -285,7 +285,7 @@ export function FaleConosco() {
                 <div className="w-full flex justify-start items-center">
                   <button
                     type="submit"
-                    className="bg-blue-200 text-white p-2 rounded w-full hover:bg-blue-400 flex justify-center items-center text-center cursor-pointer"
+                    className="bg-blue-300 text-white p-2 rounded w-full hover:bg-blue-400 flex justify-center items-center text-center cursor-pointer"
                     disabled={loadButton}
                   >
                     {loadButton ? (

@@ -19,23 +19,16 @@ export function DropdownMenuDemo() {
             <Link href="#o-que-e-a-blocok">Sobre</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
-          <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item className="DropdownMenuItem">
-            <Link href="#obras" className="hover:text-blue-300">
-              Obras
-            </Link>
+            <Link href="#obras">Obras</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item className="DropdownMenuItem">
-            <Link href="#depoimentos" className="hover:text-blue-300">
-              Depoimentos
-            </Link>
+            <Link href="#depoimentos">Depoimentos</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item className="DropdownMenuItem">
-            <Link href="#seja-um-franqueado" className="hover:text-blue-300">
-              Seja um franqueado!
-            </Link>
+            <Link href="#seja-um-franqueado">Seja um franqueado!</Link>
           </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>

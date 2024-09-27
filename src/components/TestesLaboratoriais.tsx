@@ -32,7 +32,7 @@ export function TestesLaboratoriais({ itemTestes }: TestesLaboratoriaisProps) {
                 image.title && (
                   <div key={index} className="flex gap-2 items-center w-full">
                     <div className="min-w-[30px]">
-                      <IconRosetteDiscountCheckFilled className="text-blue-200 w-[30px] h-[30px]" />
+                      <IconRosetteDiscountCheckFilled className="text-blue-300 w-[30px] h-[30px]" />
                     </div>
                     <p className="text-lg lg:text-2xl text-black uppercase font-bold">
                       {image.title}

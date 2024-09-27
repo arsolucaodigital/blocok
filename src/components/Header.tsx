@@ -33,7 +33,7 @@ export function Header() {
         <div className="container px-4 mx-auto flex items-center justify-end h-full">
           <Link
             href="mailto:franquiablocok@gmail.com"
-            className="text-white text-sm hover:text-blue-100 flex"
+            className="text-white text-sm hover:text-blue-300 flex"
           >
             franquiablocok@gmail.com
           </Link>
@@ -42,7 +42,7 @@ export function Header() {
             <li>
               <Link
                 href=""
-                className="text-white font-extralight hover:text-blue-100"
+                className="text-white font-extralight hover:text-blue-300"
               >
                 <BrandInstagram size={22} />
               </Link>
@@ -50,7 +50,7 @@ export function Header() {
             <li>
               <Link
                 href=""
-                className="text-white font-extralight hover:text-blue-100"
+                className="text-white font-extralight hover:text-blue-300"
               >
                 <BrandFacebook size={20} />
               </Link>
