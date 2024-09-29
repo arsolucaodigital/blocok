@@ -28,7 +28,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div
-        className={`bg-black transition-all duration-300 ${goingDown ? 'h-0' : 'h-8'}`}
+        className={`bg-black transition-all overflow-hidden duration-300 ${goingDown ? 'h-0' : 'h-8'}`}
       >
         <div className="container px-4 mx-auto flex items-center justify-end h-full">
           <Link
@@ -41,16 +41,18 @@ export function Header() {
           <ul className="flex gap-2 items-center">
             <li>
               <Link
-                href=""
+                href="https://www.instagram.com/franquiablocok/"
                 className="text-white font-extralight hover:text-blue-300"
+                target="_blank"
               >
                 <BrandInstagram size={22} />
               </Link>
             </li>
             <li>
               <Link
-                href=""
+                href="https://www.facebook.com/franquiablocok"
                 className="text-white font-extralight hover:text-blue-300"
+                target="_blank"
               >
                 <BrandFacebook size={20} />
               </Link>

@@ -17,16 +17,18 @@ export type FormContact = {
   cidade: string;
   estado: string;
   bairro: string;
+  atuacao: string;
   mensagem: string;
 };
 
 const contatoSchema = yup.object().shape({
   nome: yup.string().required('O campo Nome é obrigatório.'),
-  celular: yup.string().required('O campo celular é obrigatório.'),
+  celular: yup.string().required('O campo Celular é obrigatório.'),
   cep: yup.string().required('O campo CEP é obrigatório.'),
   cidade: yup.string().required('O campo Cidade é obrigatório.'),
   estado: yup.string().required('O campo Estado é obrigatório.'),
   bairro: yup.string().required('O campo Bairro é obrigatório.'),
+  atuacao: yup.string().required('O campo Área de atuação é obrigatório.'),
   mensagem: yup.string().required('O campo Mensagem é obrigatório.'),
   email: yup
     .string()
@@ -129,22 +131,41 @@ export function FaleConosco() {
           <div className="w-full flex lg:w-1/2 gap-6">
             <div className="w-full">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="nome"
-                    className="text-sm text-black font-bold"
-                  >
-                    Nome*
-                  </label>
-                  <input
-                    {...register('nome')}
-                    className="border border-slate-500 text-sm rounded p-2 w-full"
-                  />
-                  {errors.nome && (
-                    <p className="text-red-600 text-xs font-bold">
-                      {errors.nome.message}
-                    </p>
-                  )}
+                <div className="flex flex-col lg:flex-row gap-4 w-full">
+                  <div className="w-full">
+                    <label
+                      htmlFor="nome"
+                      className="text-sm text-black font-bold"
+                    >
+                      Nome*
+                    </label>
+                    <input
+                      {...register('nome')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                    />
+                    {errors.nome && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.nome.message}
+                      </p>
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <label
+                      htmlFor="atuacao"
+                      className="text-sm text-black font-bold"
+                    >
+                      Área de atuação*
+                    </label>
+                    <input
+                      {...register('atuacao')}
+                      className="border border-slate-500 text-sm rounded p-2 w-full"
+                    />
+                    {errors.atuacao && (
+                      <p className="text-red-600 text-xs font-bold">
+                        {errors.atuacao.message}
+                      </p>
+                    )}
+                  </div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-4 w-full">
                   <div className="w-full">

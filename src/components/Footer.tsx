@@ -3,7 +3,6 @@ import { Logo } from './Logo';
 import {
   BrandFacebook,
   BrandInstagram,
-  BrandWhatsapp,
   MapPin,
   Mail,
 } from 'tabler-icons-react';
@@ -55,11 +54,11 @@ export function Footer() {
                 </li> */}
                 <li className="flex gap-6">
                   <Link
-                    href=""
+                    href="mailto:franquiablocok@gmail.com"
                     className="text-white font-extralight hover:text-blue-300 flex gap-2"
                   >
                     <Mail size={26} className="w-[26px] min-w-[26px]" />
-                    <p>blocok@gmail.com</p>
+                    <p>franquiablocok@gmail.com</p>
                   </Link>
                 </li>
               </ul>
@@ -71,16 +70,18 @@ export function Footer() {
               <ul className="flex gap-2 items-center pl-2">
                 <li>
                   <Link
-                    href=""
+                    href="https://www.instagram.com/franquiablocok/"
                     className="text-white font-extralight hover:text-blue-300"
+                    target="_blank"
                   >
                     <BrandInstagram size={32} />
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="https://www.facebook.com/franquiablocok"
                     className="text-white font-extralight hover:text-blue-300"
+                    target="_blank"
                   >
                     <BrandFacebook size={32} />
                   </Link>

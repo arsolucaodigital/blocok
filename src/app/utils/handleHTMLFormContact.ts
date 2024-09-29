@@ -73,6 +73,9 @@ export function handleHTMLFormContact(body: FormContact) {
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
                         Nome: <b>${body.nome}</b>
+                      </p> 
+                      <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
+                        Área de atuação: <b>${body.atuacao}</b>
                       </p>
                       <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; color: #000">
                         Telefone: 
@@ -112,24 +115,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         Blocok
                       </a>
                       <p style="font-size:12px; color:#999999">
-                        endereço entra aqui
-                      </p>
-                      <p style="font-size:12px; color:#999999; font-weight: bold">
-                        <a
-                          href="http://api.whatsapp.com/send?1=pt_BR&phone="
-                          target="_blank"
-                          style="text-decoration: none; color:#999999; font-weight: bold"
-                        >
-                          222222222
-                        </a>
-                        /
-                        <a
-                          href="http://api.whatsapp.com/send?1=pt_BR&phone=222222"
-                          target="_blank"
-                          style="text-decoration: none; color:#999999; font-weight: bold"
-                        >
-                          22222222
-                        </a>
+                        Rua Major Augusto Marques Braga N° 7, sala 105 - Centro ​Nova Friburgo - RJ
                       </p>
                     </td>
                   </tr>
@@ -150,7 +136,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         />
                       </a>
                       <a
-                        href="https://www.instagram.com/Blocok.ecommerce"
+                        href="https://www.instagram.com/franquiablocok/"
                         target="_blank"
                         style="text-decoration: none; margin-right: 6px;"
                       >
@@ -161,7 +147,7 @@ export function handleHTMLFormContact(body: FormContact) {
                         />
                       </a>
                       <a
-                        href="https://www.facebook.com/Blocok.ecommerce"
+                        href="https://www.facebook.com/franquiablocok"
                         target="_blank"
                         style="text-decoration: none; margin-right: 6px;"
                       >
