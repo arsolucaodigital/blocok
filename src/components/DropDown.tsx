@@ -41,7 +41,7 @@ export function DropdownMenuDemo() {
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#depoimentos">Depoimentos</Link>
+            <Link href="#beneficios">Principais Benefícios</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item

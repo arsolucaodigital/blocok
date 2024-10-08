@@ -13,7 +13,8 @@ import { sejaFranqueado } from '@/configs/sejaFranqueado';
 import { FaleConosco } from '@/components/FaleConosco';
 import { PeloPais } from '@/components/PeloPais';
 import { peloPais } from '@/configs/peloPais';
-import FadeInSection from '@/components/FrameMotion';
+import { beneficios } from '@/configs/beneficios';
+import { Beneficios } from '@/components/Beneficios';
 
 export default function Home() {
   return (
@@ -22,37 +23,42 @@ export default function Home() {
       <BannerPrincipal {...bannerPrincipal} />
 
       {/* O que é a blocok */}
-      <div id="o-que-e-a-blocok" className='w-full'>
+      <div id="o-que-e-a-blocok" className="w-full">
         <Sobre {...sobre} />
       </div>
 
       {/* estrutura do blocok original */}
-      <div id="produtos" className='w-full'>
+      <div id="produtos" className="w-full">
         <Estrutura {...estrutura} />
       </div>
 
+      {/* estrutura do blocok original */}
+      <div id="beneficios" className="w-full">
+        <Beneficios {...beneficios} />
+      </div>
+
       {/* testes laboratoriais */}
-      <div className='w-full'>
+      <div className="w-full">
         <TestesLaboratoriais {...testesLaboratoriais} />
       </div>
 
       {/* OBRAS EXECUTADAS COM BLOCOK ​ORIGINAL */}
-      <div id="obras" className='w-full'>
+      <div id="obras" className="w-full">
         <Obras {...obras} />
       </div>
 
       {/* por que se tornar um ​franqueado? */}
-      <div className='w-full'>
+      <div className="w-full">
         <SejaFranqueado {...sejaFranqueado} />
       </div>
 
       {/* CONFIRA NOSSAS franquias ​PELO PAÍS! */}
-      <div className='w-full'>
+      <div className="w-full">
         <PeloPais {...peloPais} />
       </div>
 
       {/* Fale Conosco */}
-      <div id="seja-um-franqueado" className='w-full'>
+      <div id="seja-um-franqueado" className="w-full">
         <FaleConosco />
       </div>
     </main>

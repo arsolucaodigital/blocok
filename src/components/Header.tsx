@@ -79,8 +79,8 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#depoimentos" className="hover:text-blue-300">
-              Depoimentos
+            <Link href="#beneficios" className="hover:text-blue-300">
+              Principais Benefícios
             </Link>
           </li>
           <li>
