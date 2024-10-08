@@ -74,13 +74,13 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href="#obras" className="hover:text-blue-300">
-              Obras
+            <Link href="#beneficios" className="hover:text-blue-300">
+              Principais Benefícios
             </Link>
           </li>
           <li>
-            <Link href="#beneficios" className="hover:text-blue-300">
-              Principais Benefícios
+            <Link href="#obras" className="hover:text-blue-300">
+              Obras
             </Link>
           </li>
           <li>

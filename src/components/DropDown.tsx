@@ -34,14 +34,14 @@ export function DropdownMenuDemo() {
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#obras">Obras</Link>
+            <Link href="#beneficios">Principais Benefícios</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#beneficios">Principais Benefícios</Link>
+            <Link href="#obras">Obras</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item
