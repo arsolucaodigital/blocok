@@ -117,9 +117,9 @@ export function FaleConosco() {
       <section className="mt-8 lg:mt-12 w-full">
         <div className="container mx-auto px-4 lg:px-12 py-12 flex-col flex lg:flex-row gap-16 items-center">
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
-            <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
+            <h2 className="text-5xl lg:text-7xl 2xl:text-8xl mb-4 uppercase font-bebas tracking-wide font-light">
               Seja Um Franqueado
-              <span className="text-blue-300 w-full block">
+              <span className="w-full block font-bold">
                 blocok original
               </span>
             </h2>

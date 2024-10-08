@@ -9,10 +9,10 @@ export function Estrutura({
   imageMalha,
 }: EstruturaProps) {
   return (
-    <section className="bg-gray-100 mt-8 lg:mt-12 w-full py-20 md:py-32">
+    <section className="bg-gray-100 mt-8 lg:mt-12 w-full py-20 md:py-18">
       <div className="flex container px-4 mx-auto flex-col">
-        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
-          Estrutura do <span className="text-blue-300">Blocok original</span>
+        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl uppercase font-bebas tracking-wide w-full text-center mb-14 font-light">
+          Estrutura do <span className="font-bold">Blocok original</span>
         </h2>
         <div className="w-full flex flex-col lg:flex-row gap-4 items-center">
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
@@ -42,9 +42,6 @@ export function Estrutura({
                 </p>
               </div>
             </div>
-            <div className="w-[60%] auto mx-auto mb-6 flex justify-center">
-              <Image {...imageMalha} />
-            </div>
             {/* <div className="flex justify-start">
               <Link
                 href="/sobre"
@@ -54,7 +51,7 @@ export function Estrutura({
               </Link>
             </div> */}
           </div>
-          <div className="w-full lg:w-1/2 flex justify-end">
+          <div className="w-full lg:w-1/2 flex justify-end weight-400">
             <div className="w-full lg:w-[90%]">
               <Image {...image} />
             </div>

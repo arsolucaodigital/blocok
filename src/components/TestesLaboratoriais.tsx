@@ -6,18 +6,22 @@ export function TestesLaboratoriais({ itemTestes }: TestesLaboratoriaisProps) {
   return (
     <section className="mt-8 lg:mt-12 w-full">
       <div className="container mx-auto px-4 py-6 lg:py-12 flex gap-4 items-center flex-col">
-        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold uppercase font-bebas tracking-wide w-full text-center mb-14">
+        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl uppercase font-bebas tracking-wide w-full text-center mb-14 font-light">
           Testes laboratoriais
         </h2>
         <div className="w-full flex gap-4 items-center mb-10">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 w-full">
             {itemTestes.map(({ image }, index) => (
-              <div
-                key={index}
-                className="w-full flex items-center justify-center"
-              >
-                <Image {...image} />
-              </div>
+              <>
+              {image.src && (
+                <div
+                  key={index}
+                  className="w-full flex items-center justify-center"
+                >
+                  <Image {...image} />
+                </div>
+              )}
+              </>
             ))}
           </div>
         </div>

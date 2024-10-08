@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export function SejaFranqueado({ description, images }: SejaFranqueadoProps) {
   return (
-    <section className="mt-8 lg:mt-12 w-full">
-      <div className="container mx-auto px-4 lg:px-12 py:8 lg:py-12 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 items-center">
+    <section className="mt-8 lg:mt-0 w-full">
+      <div className="container mx-auto px-4 lg:px-12 py:8 lg:py-6 flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 items-center">
         <div className="w-full lg:w-1/2">
           <div className="grid grid-cols-2 gap-4 lg:gap-8">
             {images.map(({ image }, index) => (
@@ -19,9 +19,9 @@ export function SejaFranqueado({ description, images }: SejaFranqueadoProps) {
           </div>
         </div>
         <div className="w-full lg:w-3/4 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl mb-4 uppercase font-bebas tracking-wide font-normal">
             Por que se tornar um
-            <span className="text-blue-300 w-full block">
+            <span className="w-full block font-bold">
               ​franqueado
               <span className="text-black">?</span>
             </span>

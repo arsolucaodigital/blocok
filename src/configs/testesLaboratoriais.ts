@@ -78,6 +78,16 @@ export const testesLaboratoriais: TestesLaboratoriaisProps = {
       height: 200,
     },  
       order: 7,
+    },      
+    {
+      image: {
+      src: "",
+      alt: "Ruído externo e interno",
+      title: "Ruído externo e interno",
+      width: 290,
+      height: 200,
+    },  
+      order: 8,
     },  
     {
       image: {
@@ -86,7 +96,7 @@ export const testesLaboratoriais: TestesLaboratoriaisProps = {
       width: 290,
       height: 200,
     },
-      order: 8,
+      order: 9,
     },
   ],
 }

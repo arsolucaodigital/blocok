@@ -1,6 +1,5 @@
 import { SobreProps } from '@/configs/sobre';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export function Sobre({ description, image }: SobreProps) {
   return (
@@ -12,9 +11,9 @@ export function Sobre({ description, image }: SobreProps) {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl mb-4 uppercase font-bebas tracking-wide font-normal">
             o que é o{' '}
-            <span className="text-blue-300 w-full block">
+            <span className="w-full block font-bold">
               blocok original
               <span className="text-black">?</span>
             </span>

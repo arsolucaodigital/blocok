@@ -4,15 +4,15 @@ import Link from 'next/link';
 
 export function PeloPais({ image }: peloPais) {
   return (
-    <section className="bg-gray-100 mt-8 lg:mt-12 w-full flex py-16 lg:py-32">
+    <section className="bg-gray-100 mt-8 lg:mt-12 w-full flex py-16 lg:py-18">
       <div className="container mx-auto px-4 lg:px-12 flex flex-col-reverse lg:flex-row gap-4 items-center">
         <div className="w-full lg:w-1/2">
           <Image {...image} />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col gap-4">
-          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl font-bold mb-4 uppercase font-bebas tracking-wide">
+          <h2 className="text-5xl lg:text-7xl 2xl:text-8xl mb-4 uppercase font-bebas tracking-wide font-light">
             Confira nossas{' '}
-            <span className="text-blue-300">franquias Blocok</span> pelo país!
+            <span className="font-bold">franquias Blocok</span> pelo país!
           </h2>
           <p className="text-md lg:text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
             Já somos mais de{' '}

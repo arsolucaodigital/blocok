@@ -8,7 +8,7 @@ export type SejaFranqueadoProps = {
 };
 
 export const sejaFranqueado: SejaFranqueadoProps = {
-  description: `Tenha sua própria indústria do sistema ​construtivo revolucionário da construção ​civil, mais de 1 milhão de M² construídos ​em todo país. Sistema de vedação ​patenteado, testado e aprovado em todos ​os testes laboratoriais, trazendo ​economia, qualidade, agilidade e ​sustentabilidade. O BLOCOK ORIGINAL ​possui um alto potencial de retorno devido ​a exclusividade de seus benefícios e ​qualidade. Estamos em mais de 10 Estados ​em todo país.`,
+  description: `Tenha sua própria indústria do sistema ​construtivo revolucionário da construção ​civil, mais de 1 milhão de M² construídos ​em todo país. Sistema de vedação ​patenteado, testado e aprovado em todos ​os testes laboratoriais, trazendo ​economia, qualidade, agilidade e ​sustentabilidade. O BLOCOK ORIGINAL ​possui um alto potencial de retorno devido ​a exclusividade de seus benefícios e ​qualidade. Estamos em mais de 14 Estados ​em todo país.`,
   images: [
     {
       image: {
