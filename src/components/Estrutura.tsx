@@ -1,6 +1,6 @@
 import { EstruturaProps } from '@/configs/estrutura';
 import Image from 'next/image';
-import Link from 'next/link';
+import malha from '/malha.png';
 
 export function Estrutura({
   textPlacaConcreto,
@@ -32,6 +32,20 @@ export function Estrutura({
                 {TextPlacaEPS}
               </p>
             </div>
+          </div>
+          <div className="w-full lg:w-1/2 flex justify-end weight-400">
+            <div className="w-full lg:w-[90%]">
+              <Image {...image} />
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex flex-col-reverse justify-around lg:flex-row gap-4 lg:gap-8 items-center mt-10 lg:mt-20">
+          <div className="w-full lg:w-1/2 flex justify-center weight-400">
+            <div className="w-full lg:w-[70%]">
+              <Image {...imageMalha} />
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 flex flex-col gap-">
             <div className="border-solid border-4 border-black  mx-auto w-full lg:w-[80%] my-8 ">
               <div className="flex flex-col gap-4 bg-blue-100 items-center py-10  justify-center border-solid border-4 border-white">
                 <p className="text-5xl font-bold font-bebas uppercase">
@@ -41,19 +55,6 @@ export function Estrutura({
                   O blocok não tem malha de aço em sua estrutura
                 </p>
               </div>
-            </div>
-            {/* <div className="flex justify-start">
-              <Link
-                href="/sobre"
-                className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-300"
-              >
-                Saiba mais
-              </Link>
-            </div> */}
-          </div>
-          <div className="w-full lg:w-1/2 flex justify-end weight-400">
-            <div className="w-full lg:w-[90%]">
-              <Image {...image} />
             </div>
           </div>
         </div>

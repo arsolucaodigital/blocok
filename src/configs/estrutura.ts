@@ -17,8 +17,8 @@ export const estrutura: EstruturaProps = {
   imageMalha: {
     src: '/malha.png',
     alt: 'Placa de concreto',
-    width: 180,
-    height: 180,
+    width: 580,
+    height: 500,
   },
   image: {
     src: '/blocok-02.png',
