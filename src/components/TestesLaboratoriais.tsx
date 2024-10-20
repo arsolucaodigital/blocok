@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export function TestesLaboratoriais({ itemTestes }: TestesLaboratoriaisProps) {
   return (
-    <section className="mt-8 lg:mt-12 w-full">
+    <section className="lg:mt-12 w-full">
       <div className="container mx-auto px-4 py-6 lg:py-12 flex gap-4 items-center flex-col">
-        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl uppercase font-bebas tracking-wide w-full text-center mb-14 font-light">
+        <h2 className="text-5xl lg:text-7xl 2xl:text-8xl uppercase font-bebas tracking-wide w-full text-center mb-8 font-light">
           Testes laboratoriais
         </h2>
         <div className="w-full flex gap-4 items-center mb-10">

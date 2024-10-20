@@ -1,6 +1,5 @@
 import { EstruturaProps } from '@/configs/estrutura';
 import Image from 'next/image';
-import malha from '/malha.png';
 
 export function Estrutura({
   textPlacaConcreto,
@@ -41,7 +40,7 @@ export function Estrutura({
         </div>
         <div className="w-full flex flex-col-reverse justify-around lg:flex-row gap-4 lg:gap-8 items-center mt-10 lg:mt-20">
           <div className="w-full lg:w-1/2 flex justify-center weight-400">
-            <div className="w-full lg:w-[70%]">
+            <div className="w-[80%] lg:w-[50%]">
               <Image {...imageMalha} />
             </div>
           </div>

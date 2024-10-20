@@ -1,5 +1,6 @@
 import { SobreProps } from '@/configs/sobre';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Sobre({ description, image }: SobreProps) {
   return (
@@ -21,14 +22,14 @@ export function Sobre({ description, image }: SobreProps) {
           <p className="text-md lg:text-xl font-semibold text-justify leading-normal w-full lg:w-[80%]">
             {description}
           </p>
-          {/* <div className="flex justify-end w-full lg:w-[80%]">
+          <div className="flex justify-end w-full lg:w-[80%]">
             <Link
               href="/sobre"
-              className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-300"
+              className="text-md lg:text-xl font-semibold text-blue-300 uppercase hover:text-blue-500 hover:underline"
             >
               Saiba mais
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
