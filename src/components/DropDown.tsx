@@ -27,28 +27,28 @@ export function DropdownMenuDemo() {
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#o-que-e-a-blocok">Sobre</Link>
+            <Link href="/#o-que-e-a-blocok">Sobre</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#beneficios">Principais Benefícios</Link>
+            <Link href="/#beneficios">Principais Benefícios</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#obras">Obras</Link>
+            <Link href="/#obras">Obras</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="#seja-um-franqueado">Seja um franqueado!</Link>
+            <Link href="/#seja-um-franqueado">Seja um franqueado!</Link>
           </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>

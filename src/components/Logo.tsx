@@ -10,7 +10,7 @@ export function Logo() {
         alt="Blocok"
         sizes="100vw"
         style={{
-          width: '120px',
+          width: '130px',
           height: 'auto',
         }}
       />

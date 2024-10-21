@@ -69,22 +69,22 @@ export function Header() {
         </div>
         <ul className="hidden gap-4 text-black uppercase text-sm font-bold lg:flex">
           <li>
-            <Link href="#o-que-e-a-blocok" className="hover:text-blue-300">
+            <Link href="/#o-que-e-a-blocok" className="hover:text-blue-300">
               Sobre
             </Link>
           </li>
           <li>
-            <Link href="#beneficios" className="hover:text-blue-300">
+            <Link href="/#beneficios" className="hover:text-blue-300">
               Principais Benefícios
             </Link>
           </li>
           <li>
-            <Link href="#obras" className="hover:text-blue-300">
+            <Link href="/#obras" className="hover:text-blue-300">
               Obras
             </Link>
           </li>
           <li>
-            <Link href="#seja-um-franqueado" className="hover:text-blue-300">
+            <Link href="/#seja-um-franqueado" className="hover:text-blue-300">
               Seja um franqueado!
             </Link>
           </li>

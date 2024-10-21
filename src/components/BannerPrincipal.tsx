@@ -1,11 +1,10 @@
 import { BannerPrincipalProps } from '@/configs/bannerPrincipal';
-import Image from 'next/image';
 
 export function BannerPrincipal({ image, imageMobile }: BannerPrincipalProps) {
   return (
     <section className="w-full">
       <div
-        className="w-full max-h-screen h-[calc(100vh-108px)] bg-cover bg-center relative bg-fixed"
+        className="w-full max-h-[750px] h-[calc(100vh-108px)] bg-cover bg-center relative bg-fixed"
         style={{ backgroundImage: `url(${image.src})` }}
       >
         <div className="absolute top-1/2 transform left-0 -translate-y-1/2 flex items-center justify-center">
