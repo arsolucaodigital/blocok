@@ -27,7 +27,7 @@ export function DropdownMenuDemo() {
             className="DropdownMenuItem"
             onClick={handleItemClick}
           >
-            <Link href="/#o-que-e-a-blocok">Sobre</Link>
+            <Link href="/sobre">Sobre</Link>
           </DropdownMenu.Item>
           <DropdownMenu.Separator className="DropdownMenuSeparator" />
           <DropdownMenu.Item

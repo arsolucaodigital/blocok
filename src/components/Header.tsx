@@ -69,7 +69,7 @@ export function Header() {
         </div>
         <ul className="hidden gap-4 text-black uppercase text-sm font-bold lg:flex">
           <li>
-            <Link href="/#o-que-e-a-blocok" className="hover:text-blue-300">
+            <Link href="/sobre" className="hover:text-blue-300">
               Sobre
             </Link>
           </li>
